@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/variantes/create', 'Api\\VariantesController@create')->name('variantes.create');
+
+Route::post('/variantes', 'Api\\VariantesController@store')->name('variantes.store');
