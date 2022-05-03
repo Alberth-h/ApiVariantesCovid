@@ -365,26 +365,34 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoB-WO-fmG">
-                                <rect key="frame" x="0.0" y="133.5" width="375" height="533.5"/>
+                                <rect key="frame" x="0.0" y="130.5" width="375" height="133.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTj-df-5hv">
+                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.56646035878807888" green="0.57759496449371672" blue="0.66934504533678751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WoB-WO-fmG" firstAttribute="leading" secondItem="a9W-zd-kec" secondAttribute="leading" id="6dj-HA-MVy"/>
                             <constraint firstItem="4hO-TG-Odc" firstAttribute="width" secondItem="Ulg-BQ-rbu" secondAttribute="width" id="CR9-h2-fHm"/>
+                            <constraint firstItem="a9W-zd-kec" firstAttribute="bottom" secondItem="KTj-df-5hv" secondAttribute="bottom" id="CmJ-tY-mG3"/>
+                            <constraint firstItem="KTj-df-5hv" firstAttribute="leading" secondItem="a9W-zd-kec" secondAttribute="leading" id="Cre-XH-YpD"/>
+                            <constraint firstItem="KTj-df-5hv" firstAttribute="top" secondItem="WoB-WO-fmG" secondAttribute="bottom" id="KfB-SL-eJY"/>
                             <constraint firstItem="4hO-TG-Odc" firstAttribute="top" secondItem="a9W-zd-kec" secondAttribute="top" id="QzD-m6-BZS"/>
-                            <constraint firstItem="WoB-WO-fmG" firstAttribute="width" secondItem="Ulg-BQ-rbu" secondAttribute="width" id="VyS-Hf-vee"/>
-                            <constraint firstItem="WoB-WO-fmG" firstAttribute="height" secondItem="Ulg-BQ-rbu" secondAttribute="height" multiplier="0.8" id="d6J-k8-rFr"/>
-                            <constraint firstItem="a9W-zd-kec" firstAttribute="bottom" secondItem="WoB-WO-fmG" secondAttribute="bottom" id="v7v-3h-21L"/>
+                            <constraint firstItem="WoB-WO-fmG" firstAttribute="height" secondItem="Ulg-BQ-rbu" secondAttribute="height" multiplier="0.2" id="dqe-eI-XcF"/>
+                            <constraint firstItem="a9W-zd-kec" firstAttribute="trailing" secondItem="KTj-df-5hv" secondAttribute="trailing" id="fLK-B5-JiY"/>
+                            <constraint firstItem="WoB-WO-fmG" firstAttribute="width" secondItem="Ulg-BQ-rbu" secondAttribute="width" id="rWr-uX-v7M"/>
+                            <constraint firstItem="WoB-WO-fmG" firstAttribute="leading" secondItem="a9W-zd-kec" secondAttribute="leading" id="sYr-jn-bd5"/>
+                            <constraint firstItem="WoB-WO-fmG" firstAttribute="top" secondItem="4hO-TG-Odc" secondAttribute="bottom" id="uvD-mn-O7s"/>
                             <constraint firstItem="4hO-TG-Odc" firstAttribute="leading" secondItem="a9W-zd-kec" secondAttribute="leading" id="vmI-EH-0uT"/>
                             <constraint firstItem="4hO-TG-Odc" firstAttribute="height" secondItem="Ulg-BQ-rbu" secondAttribute="height" multiplier="0.1" id="xcw-mf-Fxz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a9W-zd-kec"/>
                     </view>
                     <connections>
+                        <outlet property="imgEvidence" destination="KTj-df-5hv" id="6ex-ZS-WLr"/>
                         <outlet property="lblDescription" destination="WoB-WO-fmG" id="9B3-jR-r8l"/>
                     </connections>
                 </viewController>

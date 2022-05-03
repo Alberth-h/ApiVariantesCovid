@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/variantes','Api\\VariantesController@index')->name('api.variantes.index');
-Route::get('/varaintes/{id}', 'Api\\VariantesController@show')->name('api.variantes.show');
+Route::get('/variantes/{id}', 'Api\\VariantesController@show')->name('api.variantes.show');

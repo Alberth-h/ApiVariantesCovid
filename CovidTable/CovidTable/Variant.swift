@@ -16,6 +16,8 @@ class Variant : Decodable{
     var assigned_number : String?
     var who_name : String?
     var common_countries : String?
+    var id : Int?
+    var evidence : String?
     
     /*init(_ description: String, _ lineage: String, _ date: String, _ designated: String, _ assigned: String, _ name: String) {
         self.description = description
